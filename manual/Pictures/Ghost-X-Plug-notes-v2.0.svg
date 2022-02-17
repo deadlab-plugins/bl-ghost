@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="Ghost-X-Plug-notes-v2.0.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="450.6295"
+     inkscape:cy="542.32179"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="849"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:document-rotation="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Image 6"
+     style="display:inline">
+    <image
+       sodipodi:absref="/home/niko/Documents/Dev/plugs-dev/BlueLabAudioManuals/Ghost/Pictures/Ghost-X-plug-snap.png"
+       xlink:href="Ghost-X-plug-snap.png"
+       y="31.660719"
+       x="-72.82341"
+       id="image194"
+       preserveAspectRatio="none"
+       height="201.08333"
+       width="289.27777"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Notes"
+     style="display:inline">
+    <g
+       id="g3871"
+       transform="translate(-5.0350147,2.6410233)">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3853"
+         d="m 179.37392,39.347202 -4.77171,-3.19103"
+         style="fill:none;stroke:#f8ff0d;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         style="opacity:1;fill:#f8ff0d;fill-opacity:1;stroke:#0000c7;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle3855"
+         cx="173.3678"
+         cy="35.209976"
+         r="3.1183035" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';letter-spacing:0px;word-spacing:0px;fill:#050400;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="172.1844"
+         y="36.49585"
+         id="text3859"><tspan
+           sodipodi:role="line"
+           id="tspan3857"
+           x="172.1844"
+           y="36.49585"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:#050400;fill-opacity:1;stroke-width:0.264583">1</tspan></text>
+    </g>
+    <g
+       id="g845"
+       transform="translate(0.4788837,116.67265)">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path837"
+         d="m 179.37392,39.347202 -4.77171,-3.19103"
+         style="fill:none;stroke:#f8ff0d;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         style="opacity:1;fill:#f8ff0d;fill-opacity:1;stroke:#0000c7;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         id="circle839"
+         cx="173.3678"
+         cy="35.209976"
+         r="3.1183035" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';letter-spacing:0px;word-spacing:0px;fill:#050400;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="172.1844"
+         y="36.49585"
+         id="text843"><tspan
+           sodipodi:role="line"
+           id="tspan841"
+           x="172.1844"
+           y="36.49585"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:#050400;fill-opacity:1;stroke-width:0.264583">2</tspan></text>
+    </g>
+  </g>
+</svg>

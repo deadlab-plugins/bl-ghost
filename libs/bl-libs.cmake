@@ -1,0 +1,13 @@
+include(${IPLUG2_DIR}/Scripts/cmake/WDL.cmake)
+include(${IPLUG2_DIR}/bl-libs/bluelab-lib.cmake)
+include(${IPLUG2_DIR}/bl-libs/flac.cmake)
+include(${IPLUG2_DIR}/bl-libs/ini_parser.cmake)
+include(${IPLUG2_DIR}/bl-libs/libsndfile.cmake)
+
+function(bl_add_all_libs target)
+  iplug_target_add(${target} PUBLIC INCLUDE _wdl LINK _wdl)
+  iplug_target_add(${target} PUBLIC INCLUDE _bluelab-lib LINK _bluelab-lib)
+  iplug_target_add(${target} PUBLIC INCLUDE _flac LINK _flac)
+  iplug_target_add(${target} PUBLIC INCLUDE _ini_parser LINK _ini_parser)
+  iplug_target_add(${target} PUBLIC INCLUDE _libsndfile LINK _libsndfile)
+endfunction()
