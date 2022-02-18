@@ -1,0 +1,33 @@
+diff -ruN libsndfile/src/config.h libsndfile-patched/src/config.h
+--- libsndfile/src/config.h	2022-02-18 20:14:16.004838794 +0100
++++ libsndfile-patched/src/config.h	2022-02-18 20:19:18.535320362 +0100
+@@ -48,6 +48,8 @@
+ 
+ /* Will be set to 1 if flac, ogg, vorbis, and opus are available. */
+ #define HAVE_EXTERNAL_XIPH_LIBS 0
++// #bluelab: enable flac only
++#define FORCE_ENABLE_FLAC_ONLY 1
+ 
+ /* Define to 1 if you have the `floor' function. */
+ #define HAVE_FLOOR 1
+diff -ruN libsndfile/src/flac.c libsndfile-patched/src/flac.c
+--- libsndfile/src/flac.c	2022-02-18 20:14:16.000838866 +0100
++++ libsndfile-patched/src/flac.c	2022-02-18 20:20:02.526517926 +0100
+@@ -29,7 +29,7 @@
+ #include	"sndfile.h"
+ #include	"common.h"
+ 
+-#if HAVE_EXTERNAL_XIPH_LIBS
++#if HAVE_EXTERNAL_XIPH_LIBS || FORCE_ENABLE_FLAC_ONLY
+ 
+ #include	<FLAC/stream_decoder.h>
+ #include	<FLAC/stream_encoder.h>
+@@ -1442,7 +1442,7 @@
+ } /* flac_byterate */
+ 
+ 
+-#else /* HAVE_EXTERNAL_XIPH_LIBS */
++#else /* HAVE_EXTERNAL_XIPH_LIBS || FORCE_ENABLE_FLAC_ONLY */
+ 
+ int
+ flac_open	(SF_PRIVATE *psf)

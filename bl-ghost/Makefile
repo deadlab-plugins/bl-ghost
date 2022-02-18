@@ -17,5 +17,5 @@ vst3: cmake_setup
 	$(CMAKE_BUILD_CMD) VST3
 
 cmake_setup:
-	cmake -S . -B $(BUILD_DIR) -DCMAKE_BUILD_TYPE=$(BUILD_CONFIG)	
+	cmake -S . -B $(BUILD_DIR) -DCMAKE_BUILD_TYPE=$(BUILD_CONFIG)
 

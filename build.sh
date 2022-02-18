@@ -24,14 +24,22 @@ if [ ! -d "libsndfile" ]; then
     git clone https://github.com/libsndfile/libsndfile.git
 fi
 
-# libflac
+# libsndfile
+#export FLAC_CFLAGS=$CUR_DIR/libs/flac/include
+#export FLAC_LIBS=$CUR_DIR/libs/flac/cmake-build/src/libFLAC/libFLAC.a
+#export HAVE_EXTERNAL_XIPH_LIBS=1
+
 cd libsndfile
-#git checkout 1.0.28
+#git checkout 77acc6d3
 cd $CUR_DIR/libs
 if [ ! -f "./libsndfile/configure" ]; then
     cd libsndfile
     ./autogen.sh
     ./configure
+
+    cd $CUR_DIR
+    # apply flac patch
+    patch -s -p0 -f < libsndfile-flac.patch
 fi
 #make
 
