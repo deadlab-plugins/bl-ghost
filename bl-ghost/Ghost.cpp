@@ -1301,8 +1301,6 @@ Ghost::CreateControls(IGraphics *pGraphics, int offset)
                                           kGUISizeBig,
                                           "", 2,
                                           tooltipGUISizeBig);
-    
-    mGUISizeBigButton->SetDisabled(true);
 
 #if RETINA_RESIZE_FEATURE
     mGUISizeHugeButton = (IGUIResizeButtonControl *)
