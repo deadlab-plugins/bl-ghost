@@ -12,7 +12,9 @@ if [ ! -d "flac" ]; then
 fi
 
 cd flac
-mkdir cmake-build
+if [ ! -d "cmake-build" ]; then
+    mkdir cmake-build
+fi
 cd cmake-build
 cmake .. -DWITH_OGG=0
 make
@@ -26,8 +28,10 @@ fi
 cd libsndfile
 git checkout 1.0.28
 cd $CUR_DIR/libs
-cp ./libsndfile-config/config.h ./libsndfile/src/config.h
-cp ./libsndfile-config/sndfile.h ./libsndfile/src
+if [ ! -f "./libsndfile/src/config.h" ]; then
+    cp ./libsndfile-config/config.h ./libsndfile/src/config.h
+    cp ./libsndfile-config/sndfile.h ./libsndfile/src
+fi
 
 #
 if [ ! -d "iPlug2/bl-libs" ]; then
@@ -42,14 +46,13 @@ if [ ! -d "iPlug2/Examples/bl-ghost" ]; then
 fi
 
 cd $CUR_DIR/iPlug2/Examples/bl-ghost
-cd bl-ghost
 
 make app
 make vst2
 make vst3
 
-cd bl-ghost/installer
-install-plug.sh
-install-app.sh
+cd installer
+./install-plug.sh
+./install-app.sh
 
 cd $CUR_DIR

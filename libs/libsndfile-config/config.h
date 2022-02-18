@@ -325,4 +325,4 @@
 #define __USE_MINGW_ANSI_STDIO 0
 
 /* Define to `int' if <sys/types.h> does not define. */
-#define ssize_t 
+//#define ssize_t

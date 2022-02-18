@@ -17,7 +17,7 @@ set(_libsndfile_src
   chanmap.h
   chunk.c
   command.c
-  common.c
+  #common.c
   common.h
   config.h
   dither.c
@@ -42,12 +42,12 @@ set(_libsndfile_src
   mpc2k.c
   ms_adpcm.c
   nist.c
-  ogg.c
-  ogg.h
-  ogg_opus.c
-  ogg_pcm.c
-  ogg_speex.c
-  ogg_vorbis.c
+  #ogg.c
+  #ogg.h
+  #ogg_opus.c
+  #ogg_pcm.c
+  #ogg_speex.c
+  #ogg_vorbis.c
   paf.c
   pcm.c
   pvf.c
