@@ -17,7 +17,7 @@ set(_libsndfile_src
   chanmap.h
   chunk.c
   command.c
-  #common.c
+  common.c
   common.h
   config.h
   dither.c
@@ -131,6 +131,6 @@ list(TRANSFORM _libsndfile_src PREPEND "${LIBSNDFILE_SRC}")
 #)
 
 iplug_target_add(_libsndfile INTERFACE
-  INCLUDE ${BLUELAB_DEPS}/libsndfile/src
+  INCLUDE ${BLUELAB_DEPS}/libsndfile/src ${BLUELAB_DEPS}/libsndfile/include
   SOURCE ${_libsndfile_src}
 )

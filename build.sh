@@ -26,12 +26,20 @@ if [ ! -d "libsndfile" ]; then
 fi
 
 cd libsndfile
-git checkout 1.0.28
+#git checkout 1.0.28
 cd $CUR_DIR/libs
-if [ ! -f "./libsndfile/src/config.h" ]; then
-    cp ./libsndfile-config/config.h ./libsndfile/src/config.h
-    cp ./libsndfile-config/sndfile.h ./libsndfile/src
+#if [ ! -f "./libsndfile/src/config.h" ]; then
+#    cp ./libsndfile-config/config.h ./libsndfile/src/config.h
+#    cp ./libsndfile-config/sndfile.h ./libsndfile/src
+#fi
+if [ ! -f "./libsndfile/configure" ]; then
+    cd libsndfile
+    ./autogen.sh
+    ./configure
 fi
+#make
+
+cd $CUR_DIR
 
 #
 if [ ! -d "iPlug2/bl-libs" ]; then
@@ -51,8 +59,7 @@ make app
 make vst2
 make vst3
 
-cd installer
-./install-plug.sh
-./install-app.sh
+./installer/install-plug.sh
+.installer/install-app.sh
 
 cd $CUR_DIR
