@@ -34,7 +34,8 @@ if [ ! -f "./libsndfile/configure" ]; then
     ./autogen.sh
     ./configure
 
-    cd $CUR_DIR
+    cd $CUR_DIR/libs
+    
     # apply flac patch
     patch -s -p0 -f < libsndfile-flac.patch
 fi
