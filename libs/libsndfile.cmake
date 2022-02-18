@@ -39,14 +39,16 @@ set(_libsndfile_src
   mat4.c
   mat5.c
   mpc2k.c
+  mpeg.c
   ms_adpcm.c
   nist.c
-  #ogg.c
-  #ogg.h
-  #ogg_opus.c
-  #ogg_pcm.c
-  #ogg_speex.c
-  #ogg_vorbis.c
+  nms_adpcm.c
+  ogg.c
+  ogg.h
+  ogg_opus.c
+  ogg_pcm.c
+  ogg_speex.c
+  ogg_vorbis.c
   paf.c
   pcm.c
   pvf.c

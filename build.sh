@@ -55,7 +55,9 @@ make app
 make vst2
 make vst3
 
-./installer/install-plug.sh
-.installer/install-app.sh
+cd build-linux
+
+../installer/install-plug.sh
+../installer/install-app.sh
 
 cd $CUR_DIR

@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # release
-src_dir="./bl-ghost-app"
+#src_dir="./bl-ghost-app"
 
 # debug
-#src_dir="../build-linux/bl-ghost-app"
+src_dir="../build-linux/bl-ghost-app"
 
 cd "$(dirname "$0")"
 
