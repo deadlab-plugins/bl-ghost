@@ -28,10 +28,6 @@ fi
 cd libsndfile
 #git checkout 1.0.28
 cd $CUR_DIR/libs
-#if [ ! -f "./libsndfile/src/config.h" ]; then
-#    cp ./libsndfile-config/config.h ./libsndfile/src/config.h
-#    cp ./libsndfile-config/sndfile.h ./libsndfile/src
-#fi
 if [ ! -f "./libsndfile/configure" ]; then
     cd libsndfile
     ./autogen.sh

@@ -119,17 +119,6 @@ set(_libsndfile_src
 
 list(TRANSFORM _libsndfile_src PREPEND "${LIBSNDFILE_SRC}")
 
-#set(CONFIG_H_SRC "${BLUELAB_DEPS}/libsndfile/cmake-build/src")
-#set(_config_h_
-#  config.h
-#  )
-#list(TRANSFORM _config_h_ PREPEND "${CONFIG_H_SRC}")
-
-#iplug_target_add(_libsndfile INTERFACE
-#  INCLUDE ${BLUELAB_DEPS}/libsndfile/src ${BLUELAB_DEPS}/libsndfile/cmake-build/src ${BLUELAB_DEPS}/libsndfile/cmake-build/include
-#  SOURCE ${_libsndfile_src} ${_config_h_}
-#)
-
 iplug_target_add(_libsndfile INTERFACE
   INCLUDE ${BLUELAB_DEPS}/libsndfile/src ${BLUELAB_DEPS}/libsndfile/include
   SOURCE ${_libsndfile_src}
