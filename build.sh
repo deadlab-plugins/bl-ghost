@@ -25,9 +25,6 @@ if [ ! -d "libsndfile" ]; then
 fi
 
 # libsndfile
-#export FLAC_CFLAGS=$CUR_DIR/libs/flac/include
-#export FLAC_LIBS=$CUR_DIR/libs/flac/cmake-build/src/libFLAC/libFLAC.a
-#export HAVE_EXTERNAL_XIPH_LIBS=1
 
 cd libsndfile
 #git checkout 77acc6d3
