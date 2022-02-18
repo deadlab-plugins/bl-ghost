@@ -84,9 +84,7 @@ BEGIN
 	MENUITEM "&Open...\tCtrl+O",		ID_OPEN
 	MENUITEM "&Save\tCtrl+S",		ID_SAVE   
 	MENUITEM "&Save As...\tShift+Ctrl+S",	ID_SAVE_AS
-#if (GHOST_LITE_EXPORT_SELECTION || !GHOST_LITE_VERSION)    
 	MENUITEM "&Export Selection...\tCtrl+E",ID_EXPORT_SELECTION
-#endif
 	MENUITEM "&Reload From Disk",           ID_RELOAD
 	MENUITEM "&Close",           		ID_CLOSE
         MENUITEM "&Quit",                       ID_QUIT
@@ -104,15 +102,11 @@ BEGIN
     BEGIN
 	MENUITEM "&Undo\tCtrl+Z",		ID_UNDO
 	MENUITEM "&Cut\tCtrl+X",		ID_CUT
-#if !GHOST_LITE_VERSION || GHOST_LITE_ENABLE_COPY_PASTE
 	MENUITEM "&Copy\tCtrl+C",		ID_COPY
-#endif
 	MENUITEM "&Paste\tCtrl+V",		ID_PASTE
 	MENUITEM SEPARATOR
 	MENUITEM "&Apply Gain\tCtrl+B",		ID_GAIN
-#if !GHOST_LITE_VERSION || GHOST_LITE_ENABLE_REPLACE
 	MENUITEM "&Inpaint\tCtrl+N",		ID_INPAINT
-#endif
 	MENUITEM SEPARATOR
 	MENUITEM "&Audio Settings...",     	ID_PREFERENCES
 	MENUITEM SEPARATOR
