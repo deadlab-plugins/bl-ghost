@@ -1,0 +1,2 @@
+diff -ruN libsndfile/ libsndfile-patched > libsndfile-flac.patch
+patch -s -p0 -f < libsndfile-flac.patch
