@@ -8,5 +8,5 @@ add_library(_flac INTERFACE)
 iplug_target_add(_flac INTERFACE
   INCLUDE ${BLUELAB_DEPS}/flac/include
   #SOURCE ${_flac_src}
-  LINK ${BLUELAB_DEPS}/flac/lib/linux/libFLAC-static.a
+  LINK ${BLUELAB_DEPS}/flac/cmake-build/src/libFLAC/libFLAC.a
 )
