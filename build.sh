@@ -19,12 +19,12 @@ cd cmake-build
 cmake .. -DWITH_OGG=0
 make
 
-#
 cd $CUR_DIR/libs
 if [ ! -d "libsndfile" ]; then
     git clone https://github.com/libsndfile/libsndfile.git
 fi
 
+# libflac
 cd libsndfile
 #git checkout 1.0.28
 cd $CUR_DIR/libs
@@ -37,7 +37,7 @@ fi
 
 cd $CUR_DIR
 
-#
+# iPlug2
 if [ ! -d "iPlug2/bl-libs" ]; then
     cd $CUR_DIR/iPlug2
     ln -s ../libs bl-libs

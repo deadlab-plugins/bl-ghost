@@ -1,6 +1,5 @@
 set(BLUELAB_DEPS ${IPLUG2_DIR}/bl-libs)
 
-#
 add_library(_libsndfile INTERFACE)
 set(LIBSNDFILE_SRC "${BLUELAB_DEPS}/libsndfile/src/")
 set(_libsndfile_src

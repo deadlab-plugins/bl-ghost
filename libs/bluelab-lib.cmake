@@ -90,6 +90,4 @@ list(TRANSFORM _bluelab-lib_src PREPEND "${BLUELAB_LIB_SRC}")
 iplug_target_add(_bluelab-lib INTERFACE
   INCLUDE ${BLUELAB_DEPS}/bluelab-lib
   SOURCE ${_bluelab-lib_src}
-  #DEFINE "REAPER_PLUGIN"
-  #LINK iPlug2_VST2
 )
