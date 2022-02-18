@@ -2298,7 +2298,10 @@ Ghost::OpenFile(const char *fileName)
         {
             // Open file failed
             // Remove the new created tab
-            OnTabClose(mTrackNum);
+            if (mTabsBar != NULL)
+                mTabsBar->CloseTab(mTrackNum);
+            else
+                OnTabClose(mTrackNum);
         }
     }
 
