@@ -38,3 +38,5 @@ To build Ghost app, vst2 and vst3:
 - open bl-ghost.sln and build
 
 ![bl-ghost snapshot](https://github.com/deadlab-plugins/bl-ghost/blob/master/Images/bl-ghost.png)
+
+![bl-ghost video](https://www.youtube.com/watch?v=womul8SFWa4)
