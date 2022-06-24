@@ -1,9 +1,3 @@
-[submodule "flac"]
-	path = flac
-	url = ./libs/flac
-[submodule "libsndfile"]
-	path = libsndfile
-	url = ./libs/libsndfile
 [submodule "libs/flac"]
 	path = libs/flac
 	url = https://github.com/xiph/flac.git
