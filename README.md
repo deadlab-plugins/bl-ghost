@@ -22,3 +22,4 @@ Ghost provides a large set of features for visualizing and editing spectrograms:
 
 It is usable on Linux, MacOS and Windows, as plugin or standalone application.
 
+![bl-ghost snapshot](https://github.com/deadlab-plugins/bl-ghost/blob/master/Images/bl-ghost.png)
