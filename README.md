@@ -22,4 +22,19 @@ Ghost provides a large set of features for visualizing and editing spectrograms:
 
 It is usable on Linux, MacOS and Windows, as plugin or standalone application.
 
+## Building on Linux
+To build Ghost app, vst2 and vst3:
+- launch ./build.sh
+- at a moment, you may have to launch iPlug2/Dependencies/IPlug/download-iplug-sdks.sh
+
+## Building on Mac
+- go to iPlug2/Examples
+- make a symbolic link to bl-ghost, to get: iPlug2/Examples/bl-ghost pointing to the main bl-ghost directory
+- open bl-ghost.xcworkspace and build
+
+## Building on Windows
+- go to iPlug2/Examples
+- make a shortcut to bl-ghost, to get: iPlug2/Examples/bl-ghost pointing to the main bl-ghost directory
+- open bl-ghost.sln and build
+
 ![bl-ghost snapshot](https://github.com/deadlab-plugins/bl-ghost/blob/master/Images/bl-ghost.png)
