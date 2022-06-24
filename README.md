@@ -37,6 +37,6 @@ To build Ghost app, vst2 and vst3:
 - make a shortcut to bl-ghost, to get: iPlug2/Examples/bl-ghost pointing to the main bl-ghost directory
 - open bl-ghost.sln and build
 
-To see it in action, have a look at [this video](https://www.youtube.com/watch?v=womul8SFWa4)
+To see it in action, have a look at [this video](https://www.youtube.com/watch?v=womul8SFWa4).
 
 ![bl-ghost snapshot](https://github.com/deadlab-plugins/bl-ghost/blob/master/Images/bl-ghost.png)
