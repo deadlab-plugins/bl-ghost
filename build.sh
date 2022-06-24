@@ -63,6 +63,18 @@ fi
 
 cd $CUR_DIR/iPlug2/Examples/bl-ghost
 
+# custom NanoVG
+cd $CUR_DIR
+if [ ! -d "nanovg" ]; then
+    git clone https://github.com/nd-bl/nanovg.git
+    cd nanovg
+    git pull origin ndbl-branch
+    git checkout ndbl-branch
+    cd ..
+    mv iPlug2/Dependencies/IGraphics/NanoVG iPlug2/Dependencies/IGraphics/NanoVG-old
+    cp -R nanovg iPlug2/Dependencies/IGraphics/NanoVG
+fi
+
 make app
 make vst2
 make vst3
