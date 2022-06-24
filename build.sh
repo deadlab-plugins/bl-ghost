@@ -48,6 +48,18 @@ fi
 #git clone https://github.com/nd-bl/iPlug2.git
 #git checkout linux-bl-fix
 
+# Set custom NanoVG inside iPlug2
+cd $CUR_DIR
+if [ ! -d "nanovg" ]; then
+    git clone https://github.com/nd-bl/nanovg.git
+    cd nanovg
+    git pull origin ndbl-branch
+    git checkout ndbl-branch
+    cd ..
+    mv iPlug2/Dependencies/IGraphics/NanoVG iPlug2/Dependencies/IGraphics/NanoVG-old
+    cp -R nanovg iPlug2/Dependencies/IGraphics/NanoVG
+fi
+
 cd $CUR_DIR
 
 if [ ! -d "iPlug2/bl-libs" ]; then
@@ -62,18 +74,6 @@ if [ ! -d "iPlug2/Examples/bl-ghost" ]; then
 fi
 
 cd $CUR_DIR/iPlug2/Examples/bl-ghost
-
-# custom NanoVG
-cd $CUR_DIR
-if [ ! -d "nanovg" ]; then
-    git clone https://github.com/nd-bl/nanovg.git
-    cd nanovg
-    git pull origin ndbl-branch
-    git checkout ndbl-branch
-    cd ..
-    mv iPlug2/Dependencies/IGraphics/NanoVG iPlug2/Dependencies/IGraphics/NanoVG-old
-    cp -R nanovg iPlug2/Dependencies/IGraphics/NanoVG
-fi
 
 make app
 make vst2
