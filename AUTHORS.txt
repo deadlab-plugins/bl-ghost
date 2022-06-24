@@ -1,0 +1,1 @@
+The BlueLab plugins have been developed by Nicolas Dittlo <deadlab.plugins@gmail.com>
