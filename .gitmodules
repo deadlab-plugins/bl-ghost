@@ -4,3 +4,9 @@
 [submodule "libsndfile"]
 	path = libsndfile
 	url = ./libs/libsndfile
+[submodule "libs/flac"]
+	path = libs/flac
+	url = https://github.com/xiph/flac.git
+[submodule "libs/libsndfile"]
+	path = libs/libsndfile
+	url = https://github.com/libsndfile/libsndfile.git
