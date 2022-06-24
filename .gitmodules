@@ -1,3 +1,6 @@
 [submodule "flac"]
 	path = flac
 	url = ./libs/flac
+[submodule "libsndfile"]
+	path = libsndfile
+	url = ./libs/libsndfile

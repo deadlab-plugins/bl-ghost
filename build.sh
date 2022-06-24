@@ -41,9 +41,15 @@ if [ ! -f "./libsndfile/configure" ]; then
 fi
 #make
 
+# iPlug2
+
+# won't work for the moment, will need special version of nanovg etc...
+#cd $CUR_DIR/libs
+#git clone https://github.com/nd-bl/iPlug2.git
+#git checkout linux-bl-fix
+
 cd $CUR_DIR
 
-# iPlug2
 if [ ! -d "iPlug2/bl-libs" ]; then
     cd $CUR_DIR/iPlug2
     ln -s ../libs bl-libs
